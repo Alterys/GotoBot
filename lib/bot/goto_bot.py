@@ -9,7 +9,7 @@ from discord.ext.commands import when_mentioned_or
 from ..db import db
 
 OWNER_IDS = [694138142923685998, 327062541438287872]
-COGS = ['search', 'pics']
+COGS = ['search', 'pics', 'help', 'music']
 
 
 def get_prefix(bot, message):
@@ -65,7 +65,7 @@ class Bot(DisBot):
 
     async def on_ready(self):
         await self.update_db()
-        await self.change_presence(activity=Activity(name="https://discord.gg/gx2wCSPspB", type=ActivityType.listening))
+        await self.change_presence(activity=Activity(name="!help", type=ActivityType.listening))
         print("bot ready..")
 
 
