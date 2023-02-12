@@ -8,7 +8,7 @@ from discord.ext.commands import when_mentioned_or
 from ..db import db
 
 OWNER_IDS = [694138142923685998, 327062541438287872]
-COGS = ['search']
+COGS = ['search', 'pics']
 
 
 def get_prefix(bot, message):
