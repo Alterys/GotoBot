@@ -9,7 +9,7 @@ from discord.ext.commands import when_mentioned_or
 from ..db import db
 
 OWNER_IDS = [694138142923685998, 327062541438287872]
-COGS = ['search', 'pics', 'help', 'music']
+COGS = ['search', 'pics', 'help', 'music', 'roles']
 
 
 def get_prefix(bot, message):
